@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
@@ -8,7 +8,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "run:all": "nx run-many --target serve --all"
+    "run:all": "nx run-many --target serve --all",
+    "doc": "compodoc -p apps/%npm_config_project%/tsconfig.doc.json -d apps/%npm_config_project%/.documentation/"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +35,7 @@
     "@angular/cli": "~15.0.0",
     "@angular/compiler-cli": "~15.0.0",
     "@angular/language-service": "~15.0.0",
+    "@compodoc/compodoc": "^1.1.19",
     "@nrwl/cli": "15.2.1",
     "@nrwl/cypress": "15.2.1",
     "@nrwl/eslint-plugin-nx": "15.2.1",
