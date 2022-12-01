@@ -6,10 +6,10 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",
     "start": "nx serve",
-    "build": "nx build",
+    "start:all": "nx run-many --target serve --all",
     "test": "nx test",
-    "run:all": "nx run-many --target serve --all",
-    "doc": "compodoc -p apps/%npm_config_project%/tsconfig.doc.json -d apps/%npm_config_project%/.documentation/"
+    "doc": "compodoc -p apps/%npm_config_project%/tsconfig.doc.json -d apps/%npm_config_project%/.documentation/",
+    "build": "nx build"
   },
   "private": true,
   "dependencies": {
@@ -17,6 +17,7 @@
     "@angular/common": "~15.0.0",
     "@angular/compiler": "~15.0.0",
     "@angular/core": "~15.0.0",
+    "@angular/elements": "^15.0.2",
     "@angular/forms": "~15.0.0",
     "@angular/platform-browser": "~15.0.0",
     "@angular/platform-browser-dynamic": "~15.0.0",
