@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UiIdatisUiComponent } from './ui-idatis-ui.component';
+import { MenuComponent } from './menu.component';
 
-describe('UiIdatisUiComponent', () => {
-  let component: UiIdatisUiComponent;
-  let fixture: ComponentFixture<UiIdatisUiComponent>;
+describe('MenuComponent', () => {
+  let component: MenuComponent;
+  let fixture: ComponentFixture<MenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UiIdatisUiComponent],
+      declarations: [MenuComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(UiIdatisUiComponent);
+    fixture = TestBed.createComponent(MenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

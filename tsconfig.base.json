@@ -15,9 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@idatis-ui": [
-        "libs/ui/idatis-ui/src/index.ts"
-      ]
+      "@idatis": ["libs/ui/idatis/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
