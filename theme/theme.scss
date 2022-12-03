@@ -1,17 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-
 //FONTS
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 $font-base-typography: 'Poppins', sans-serif;
 $font-size-base: 1rem;
 
 //COLORS
-$color-dark: #212121;
-$color-grey-dark: #5c5b5b;
-$color-grey-medium: #969696;
-$color-grey-light: #dad7d7;
-$color-grey-lighter: #ededed;
-$color-light: #f5f5f5;
-$color-lighter: #fafafa;
+$font-color-base: #212121;
+$color-body-base: #ffffff;
 
 * {
   font-family: $font-base-typography;
@@ -25,8 +19,8 @@ html, body {
 
 body {
   font-family: $font-base-typography;
-  background-color: $color-light;
+  background-color: $color-body-base;
   font-size: $font-size-base;
-  color: $color-dark;
+  color: $font-color-base;
 }
 

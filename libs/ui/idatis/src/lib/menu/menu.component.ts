@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'idatis-menu',
@@ -9,7 +10,10 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   imports: [
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ]
 })
-export class IdatisMenuComponent {}
+export class IdatisMenuComponent {
+  @Input() appName = '';
+}
