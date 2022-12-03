@@ -1,9 +1,8 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import '@idatis/idatis-ui';
-
+import { IdatisMenuComponent } from '@idatis/idatis-ui';
 import { AppComponent } from './app.component';
 
 export const ROUTES = [
@@ -26,10 +25,10 @@ export const ROUTES = [
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    IdatisMenuComponent,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
