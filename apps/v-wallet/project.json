@@ -7,25 +7,16 @@
   "targets": {
     "build": {
       "executor": "@nrwl/angular:webpack-browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/v-wallet",
         "index": "apps/v-wallet/src/index.html",
         "main": "apps/v-wallet/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/v-wallet/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/v-wallet/src/favicon.ico",
-          "apps/v-wallet/src/assets"
-        ],
-        "styles": [
-          "apps/v-wallet/src/styles.scss"
-        ],
+        "assets": ["apps/v-wallet/src/favicon.ico", "apps/v-wallet/src/assets"],
+        "styles": ["apps/v-wallet/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/v-wallet/webpack.config.js"
@@ -88,17 +79,12 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/v-wallet/**/*.ts",
-          "apps/v-wallet/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/v-wallet/**/*.ts", "apps/v-wallet/**/*.html"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "apps/v-wallet/jest.config.ts",
         "passWithNoTests": true

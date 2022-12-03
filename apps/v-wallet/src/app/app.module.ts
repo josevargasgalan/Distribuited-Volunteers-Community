@@ -1,8 +1,8 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { IdatisMenuComponent } from '@idatis';
+import '@idatis/idatis-ui';
 
 import { AppComponent } from './app.component';
 
@@ -26,10 +26,10 @@ export const ROUTES = [
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    IdatisMenuComponent,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

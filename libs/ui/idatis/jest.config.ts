@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'ui-idatis-ui',
+  displayName: 'ui2-idatis',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/ui/idatis-ui',
+  coverageDirectory: '../../../coverage/libs/ui2/idatis',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

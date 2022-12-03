@@ -9,7 +9,8 @@
     "start:all": "nx run-many --target serve --all",
     "test": "nx test",
     "doc": "compodoc -p apps/%npm_config_project%/tsconfig.doc.json -d apps/%npm_config_project%/.documentation/",
-    "build": "nx build"
+    "build": "nx build",
+    "build:idatis-ui": "ng build --prod --project idatis && npm publish --access public ./dist/libs/ui/idatis && del dist"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +25,7 @@
     "@angular/platform-browser": "~15.0.0",
     "@angular/platform-browser-dynamic": "~15.0.0",
     "@angular/router": "~15.0.0",
+    "@idatis/idatis-ui": "^1.0.0",
     "@nrwl/angular": "15.2.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
@@ -57,8 +59,13 @@
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "jest-preset-angular": "~12.2.2",
+    "ng-packagr": "~15.0.0",
     "ngx-build-plus": "^15.0.0",
     "nx": "15.2.1",
+    "postcss": "^8.4.5",
+    "postcss-import": "~14.1.0",
+    "postcss-preset-env": "~7.5.0",
+    "postcss-url": "~10.1.3",
     "prettier": "^2.6.2",
     "ts-jest": "28.0.5",
     "ts-node": "10.9.1",
